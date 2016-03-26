@@ -1,4 +1,4 @@
-package org.filetypefinder.filters;/*
+/*
  *    Copyright 2014 - 2016 Yannick Watier
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +14,8 @@ package org.filetypefinder.filters;/*
  *    limitations under the License.
  */
 
+package org.filetypefinder.filters;
+
 import org.filetypefinder.core.Filter;
 import org.filetypefinder.core.FilterProperties;
 
@@ -25,7 +27,6 @@ import java.util.zip.ZipInputStream;
 /**
  * Created by Yannick on 2/16/2016.
  */
-
 
 @FilterProperties(mimeType = "application/x-java-jar", parent = "org.filetypefinder.filters.ZipImpl")
 public class JarImpl implements Filter {
