@@ -16,6 +16,7 @@
 
 package org.filetypefinder.filters;
 
+
 import org.filetypefinder.core.Filter;
 import org.filetypefinder.core.FilterProperties;
 
@@ -28,7 +29,7 @@ import java.util.zip.ZipInputStream;
  * Created by Yannick on 2/16/2016.
  */
 
-@FilterProperties(mimeType = "application/x-java-war", parent = "org.filetypefinder.filters.ZipImpl")
+@FilterProperties(mimeType = "application/x-java-war", parent = "ZipImpl")
 public class WarImpl implements Filter {
 
     public boolean detect(byte[] bytes) {

@@ -25,7 +25,7 @@ import java.util.Arrays;
  * Created by Yannick on 2/16/2016.
  */
 
-@FilterProperties(mimeType = "application/zip", childs = {"org.filetypefinder.filters.JarImpl", "org.filetypefinder.filters.WarImpl"})
+@FilterProperties(mimeType = "application/zip", childs = {"JarImpl", "WarImpl"})
 public class ZipImpl implements Filter {
     public static final byte[] HEADER_ARCHIVE_MAGIC_NUMBER = {0x50, 0x4B, 0x03, 0x04};
     public static final byte[] HEADER_EMPTY_MAGIC_NUMBER = {0x50, 0x4B, 0x05, 0x06};

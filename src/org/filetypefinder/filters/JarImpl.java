@@ -28,7 +28,7 @@ import java.util.zip.ZipInputStream;
  * Created by Yannick on 2/16/2016.
  */
 
-@FilterProperties(mimeType = "application/x-java-jar", parent = "org.filetypefinder.filters.ZipImpl")
+@FilterProperties(mimeType = "application/x-java-jar", parent = "ZipImpl")
 public class JarImpl implements Filter {
 
     public boolean detect(byte[] bytes) {
